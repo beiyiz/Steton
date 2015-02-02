@@ -1,0 +1,61 @@
+﻿<div class="container">
+	<div class="row well">
+		<div class="col-md-2">
+			Select Building:
+		</div>
+		<div class="col-md-3">
+			<select class="form-control" ng-options="bldg as bldg.BuildingName for bldg in buildings"
+			        ng-model="selectedBuilding" ng-change="showBuildingInfo()">
+				<option value="">All</option>
+			</select>
+		</div>
+		<div class="col-md-2" ng-show="showBuildingDetails">
+			Number Of Floors: {{ selectedBuilding.NumberOfFloors}}
+		</div>
+		<div class="col-md-2" ng-show="showBuildingDetails">
+			Number Of Elevators: {{ selectedBuilding.NumberOfElevators}}
+		</div>
+	</div>
+
+	<div class="row">
+		<h4>Activity Log</h4>
+		<table class="table table-bordered table-responsive">
+			<thead>
+				<tr>
+					<th>
+						Building Name
+					</th>
+					<th>
+						Number Of Floors
+					</th>
+					<th>
+						Number Of Elevators
+					</th>
+					<th>
+						Call Button Activity
+					</th>
+					<th>
+						Activity Description
+					</th>
+					<th>
+						Lift Number
+					</th>
+					<th>
+						Activity Date
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="activityLog in activityLogs | filter: { Building: selectedBuilding }">
+					<td>{{ activityLog.Building.BuildingName }}</td>
+					<td>{{ activityLog.Building.NumberOfFloors }}</td>
+					<td>{{ activityLog.Building.NumberOfElevators }}</td>
+					<td>{{ activityLog.CallButtonActivity }}</td>
+					<td>{{ activityLog.ActivityDescription }}</td>
+					<td>{{ activityLog.LiftNumber }}</td>
+					<td>{{ activityLog.ActivityDate | date: 'MM/dd/yyyy hh:mm:ss a' }}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

@@ -1,0 +1,16 @@
+﻿.container{
+	width: 100%;
+}
+.floor {
+		width: 295px;
+		height: 97px!important;
+	}
+	.elevator {
+		width: 190px;
+		height: 97px!important;
+	}
+	.building {
+		width: 400px;
+	}
+
+	

@@ -1,0 +1,6 @@
+C:\Users\zhengb\Documents\Visual Studio 2013\Projects\ElevatorSimulation\ElevatorSimulationUI\bin\ElevatorSimulationUI.dll.config
+C:\Users\zhengb\Documents\Visual Studio 2013\Projects\ElevatorSimulation\ElevatorSimulationUI\bin\ElevatorSimulationUI.dll
+C:\Users\zhengb\Documents\Visual Studio 2013\Projects\ElevatorSimulation\ElevatorSimulationUI\bin\ElevatorSimulationUI.pdb
+C:\Users\zhengb\Documents\Visual Studio 2013\Projects\ElevatorSimulation\ElevatorSimulationUI\obj\Debug\ElevatorSimulationUI.csprojResolveAssemblyReference.cache
+C:\Users\zhengb\Documents\Visual Studio 2013\Projects\ElevatorSimulation\ElevatorSimulationUI\obj\Debug\ElevatorSimulationUI.dll
+C:\Users\zhengb\Documents\Visual Studio 2013\Projects\ElevatorSimulation\ElevatorSimulationUI\obj\Debug\ElevatorSimulationUI.pdb

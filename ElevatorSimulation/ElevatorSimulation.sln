@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevatorSimulationAPI", "ElevatorSimulation\ElevatorSimulationAPI.csproj", "{E2373675-DB9D-49A5-A2D2-577F0DD0F137}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevatorSimulationUI", "ElevatorSimulationUI\ElevatorSimulationUI.csproj", "{6ECF62D4-8406-4699-B635-891F2E683420}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevatorSimulationRepository", "ElevatorSimulationRepository\ElevatorSimulationRepository.csproj", "{F5E1D3CD-80CC-4CA4-AF46-6427BFF10AF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2373675-DB9D-49A5-A2D2-577F0DD0F137}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2373675-DB9D-49A5-A2D2-577F0DD0F137}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2373675-DB9D-49A5-A2D2-577F0DD0F137}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2373675-DB9D-49A5-A2D2-577F0DD0F137}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ECF62D4-8406-4699-B635-891F2E683420}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ECF62D4-8406-4699-B635-891F2E683420}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ECF62D4-8406-4699-B635-891F2E683420}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ECF62D4-8406-4699-B635-891F2E683420}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5E1D3CD-80CC-4CA4-AF46-6427BFF10AF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5E1D3CD-80CC-4CA4-AF46-6427BFF10AF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5E1D3CD-80CC-4CA4-AF46-6427BFF10AF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5E1D3CD-80CC-4CA4-AF46-6427BFF10AF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

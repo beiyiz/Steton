@@ -1,0 +1,44 @@
+﻿<div class="container">
+	<div class="row well">
+		<div class="col-md-2">
+			Select Building:
+		</div>
+		<div class="col-md-3">
+			<select class="form-control" ng-options="bldg as bldg.BuildingName for bldg in buildings"
+					ng-model="selectedBuilding" ng-change="showBuilding()"></select>
+		</div>
+		<div class="col-md-2" ng-show="showBuildingDetails">
+			Number Of Floors: {{ selectedBuilding.NumberOfFloors}}
+		</div>
+		<div class="col-md-2" ng-show="showBuildingDetails">
+			Number Of Elevators: {{ selectedBuilding.NumberOfElevators}}
+		</div>
+	</div>
+	<div ng-show="showError"><span class="text-danger">{{ dbError }}</span></div>
+
+	<div class="container">
+		<div ng-show="showBuildingFloors" id="building" class="row" ng-style="buildingStyle">
+
+			<div class="row col-md-3">
+				<div class="floor row well" ng-repeat="floor in floors | orderBy:'index':true" id="{{ floor.floorId }}">
+
+					<div class="col-md-4">
+						<img src="" ng-src="{{floor.numberImgSrc}}" width="56"/>
+					</div>
+					<div class="col-md-7">
+						<img src="" ng-src="{{floor.upImgSrc}}" width="56" ng-show="floor.upImgSrc!=''" ng-click="callButtonPressed('up', floor.number )"/>
+						<img src="" ng-src="{{floor.downImgSrc}}" width="56" ng-show="floor.downImgSrc!=''" ng-click="callButtonPressed('down', floor.number )"/>
+					</div>
+				</div>
+			</div>
+
+			<div class="elevator col-md-4 well" ng-repeat="lift in lifts" id="{{ lift.liftId }}" ng-style="lift.style">
+
+				<img ng-repeat="floor in floors" src="" ng-src="{{ floor.numberImgSrc}}" width="25" ng-click="move(lift, floor.number )"/>
+				<div id="leftDoor{{ lift.liftId }}" ng-style="lift.leftDoorStyle"></div>
+				<div id="rightDoor{{ lift.liftId }}" ng-style="lift.rightDoorStyle"></div>
+				
+			</div>
+		</div>
+	</div>
+</div>

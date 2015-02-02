@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html ng-app="simApp">
+<head>
+	<meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Elevator Simulation</title>
+	<link rel="stylesheet" href="/Content/bootstrap.min.css">
+	<link rel="stylesheet" href="/Content/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="/css/app.css">
+
+</head>
+<body>
+	<div class="container" ng-controller="mainController">
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+
+						<li><a href="" class="glyphicon glyphicon-home" ng-click="goHome();"> Simulator</a></li>
+						<li><a href="" class="glyphicon glyphicon-list-alt" ng-click="viewActivityLog();"> Report</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<ng-view>
+
+		</ng-view>
+	</div>
+
+	<script src="/Scripts/jquery-2.1.3.min.js"></script>
+	<script src="/Scripts/bootstrap.min.js"></script>
+	<script src="/Scripts/angular.min.js"></script>
+	<script src="/Scripts/angular-sanitize.min.js"></script>
+	<script src="/Scripts/angular-route.min.js"></script>
+	<script src="/Scripts/angular-resource.min.js"></script>
+	<script src="/Scripts/angular-animate.min.js"></script>
+
+	<script src="/js/app.js"></script>
+	<script src="/js/services/simData.js"></script>
+
+	<script src="/js/controllers/mainController.js"></script>
+	<script src="/js/controllers/buildingController.js"></script>
+	<script src="/js/controllers/activityLogController.js"></script>
+
+</body>
+</html>
