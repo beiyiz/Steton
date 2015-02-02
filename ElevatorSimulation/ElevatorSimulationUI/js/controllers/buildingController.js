@@ -62,7 +62,7 @@ simApp.controller('buildingController',
 				lift.isIdle = true;
 				lift.style = { "top": $scope.floors[$scope.currentFloor - 1].position }
 				lift.leftDoorStyle = {
-					"background": "#98bf21",
+					"background-image": "url('/Images/ElevatorDoorBG.jpg')",
 					"height": "96px",
 					"width": "1px",
 					"top": "0",
@@ -71,7 +71,7 @@ simApp.controller('buildingController',
 					"border-style": "solid"
 				}
 				lift.rightDoorStyle = {
-					"background": "#98bf21",
+					"background-image": "url('/Images/ElevatorDoorBG.jpg')",
 					"height": "96px",
 					"width": "1px",
 					"top": "0",

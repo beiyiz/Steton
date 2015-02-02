@@ -72,6 +72,7 @@
     <Content Include="css\app.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Images\down_arrow.png" />
+    <Content Include="Images\ElevatorDoorBG.jpg" />
     <Content Include="Images\Number1.png" />
     <Content Include="Images\Number10.png" />
     <Content Include="Images\Number2.png" />
