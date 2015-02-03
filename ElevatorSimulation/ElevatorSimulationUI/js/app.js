@@ -28,5 +28,5 @@ var simApp = angular.module('simApp', ['ngResource', 'ngSanitize', 'ngRoute', 'n
 			}
 		})
 	.otherwise({ redirectTo: '/' });
-	//$locationProvider.html5Mode(true);
+	$locationProvider.html5Mode(true);
 });

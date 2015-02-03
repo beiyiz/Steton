@@ -44,3 +44,6 @@ Temporary Items
 
 *.docx
 *.tmp
+*.cache
+*.cache
+*.txt
